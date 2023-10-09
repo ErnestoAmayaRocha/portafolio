@@ -6,8 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="icon" href="assets/icono.png" type="image/svg+xml">
-
+  <script src="contador.js"></script>
   <title>Portafolio</title>
+  <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
@@ -27,22 +28,92 @@
 
         <div class="mt-8 flex flex-wrap  gap-4 text-center">
           <a class="block w-full rounded border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 sm:w-auto"
-            href="/get-started">
+            href="#">
             Conocece mas sobre mi
           </a>
 
           <a class="block w-full rounded border border-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto"
-            href="/about">
+            href="#">
             Contactame
           </a>
         </div>
       </div>
       <div class="lg:w-1/2 flex justify-center items-center mt-5">
         <!-- Agrega tu imagen aquí -->
-        <img src="https://vecinoscomprometidos.com/img/team_vc/neto.jpg" alt="Tu Imagen" class="w-90 h-auto rounded-full">
-    </div>
+        <img src="https://vecinoscomprometidos.com/img/team_vc/neto.jpg" alt="Tu Imagen"
+          class="w-90 h-auto rounded-full">
+      </div>
     </div>
   </section>
+
+
+  <section class="bg-gray-50">
+    <div class="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center">
+      <div class="mx-auto max-w-xl text-center">
+        <h1 class="text-3xl font-extrabold sm:text-5xl">
+          Neto Dev.
+          <strong class="font-extrabold text-red-700 sm:block">
+            Sitio en construccion
+          </strong>
+        </h1>
+
+        <p class="mt-4 sm:text-xl/relaxed">
+          En el desarrollo web, la creatividad y la precisión se combinan para dar vida a la innovación digital.
+        </p>
+
+
+        <!--  <div id="contador" class="font-extrabold text-red-700 sm:block text-3xl">
+        
+          <div id="horas">0 horas</div>
+          <div id="minutos">0 minutos</div>
+          <div id="segundos">0 segundos</div>
+      </div> -->
+
+
+        <div class="mt-8 sm:mt-12">
+          <dl class="grid grid-cols-1 gap-4 sm:grid-cols-4">
+            <div class="flex flex-col rounded-lg border border-gray-100 px-4 py-8 text-center">
+              <dt class="order-last text-lg font-medium text-gray-500 ">
+                Dias
+              </dt>
+
+              <dd id="dias" class="font-extrabold text-red-700 sm:block md:text-5xl">
+
+              </dd>
+            </div>
+
+            <div class="flex flex-col rounded-lg border border-gray-100 px-4 py-8 text-center">
+              <dt class="order-last text-lg font-medium text-gray-500">
+                Horas
+              </dt>
+
+              <dd id="horas" class="font-extrabold text-red-700 sm:block md:text-5xl"></dd>
+            </div>
+
+            <div class="flex flex-col rounded-lg border border-gray-100 px-4 py-8 text-center">
+              <dt class="order-last text-lg font-medium text-gray-500">
+                Minutos
+              </dt>
+
+              <dd id="minutos" class="font-extrabold text-red-700 sm:block md:text-5xl"></dd>
+            </div>
+
+            <div class="flex flex-col rounded-lg border border-gray-100 px-4 py-8 text-center">
+              <dt class="order-last text-lg font-medium text-gray-500">
+                Segundos
+              </dt>
+
+              <dd id="segundos" class="font-extrabold text-red-700 sm:block md:text-5xl"></dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
 
 
 </body>
