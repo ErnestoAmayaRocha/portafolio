@@ -9,6 +9,8 @@
   <script src="contador.js"></script>
   <title>Portafolio</title>
   <link rel="stylesheet" href="estilos.css">
+
+  <link rel="stylesheet" href="https://anijs.github.io/lib/anicollection/anicollection.css">
 </head>
 
 <body>
@@ -17,7 +19,7 @@
 
       <div class="lg:w-1/2 mx-auto max-w-3xl text-justify ">
         <h1
-          class="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl">
+          class=" swing animated bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl">
           Ernesto Amaya Rocha
           <span class="sm:block text-2xl"> Desarrollo y gestión de software. </span>
         </h1>
@@ -38,7 +40,7 @@
           </a>
         </div>
       </div>
-      <div class="lg:w-1/2 flex justify-center items-center mt-5">
+      <div class=" bounceIn animated lg:w-1/2 flex justify-center items-center mt-5">
         <!-- Agrega tu imagen aquí -->
         <img src="https://vecinoscomprometidos.com/img/team_vc/neto.jpg" alt="Tu Imagen"
           class="w-90 h-auto rounded-full">
@@ -72,7 +74,7 @@
 
         <div class="mt-8 sm:mt-12">
           <dl class="grid grid-cols-1 gap-4 sm:grid-cols-4">
-            <div class="flex flex-col rounded-lg border border-gray-100 px-4 py-8 text-center">
+            <div class="flex flex-col rounded-lg border border-gray-300 px-4 py-8 text-center">
               <dt class="order-last text-lg font-medium text-gray-500 ">
                 Dias
               </dt>
@@ -82,7 +84,7 @@
               </dd>
             </div>
 
-            <div class="flex flex-col rounded-lg border border-gray-100 px-4 py-8 text-center">
+            <div class="flex flex-col rounded-lg border border-gray-300 px-4 py-8 text-center">
               <dt class="order-last text-lg font-medium text-gray-500">
                 Horas
               </dt>
@@ -90,7 +92,7 @@
               <dd id="horas" class="font-extrabold text-red-700 sm:block text-4xl md:text-5xl"></dd>
             </div>
 
-            <div class="flex flex-col rounded-lg border border-gray-100 px-4 py-8 text-center">
+            <div class="flex flex-col rounded-lg border border-gray-300 px-4 py-8 text-center">
               <dt class="order-last text-lg font-medium text-gray-500">
                 Minutos
               </dt>
@@ -98,7 +100,7 @@
               <dd id="minutos" class="font-extrabold text-red-700 sm:block text-4xl md:text-5xl"></dd>
             </div>
 
-            <div class="flex flex-col rounded-lg border border-gray-100 px-4 py-8 text-center">
+            <div class="flex flex-col rounded-lg border border-gray-300 px-4 py-8 text-center">
               <dt class="order-last text-lg font-medium text-gray-500">
                 Segundos
               </dt>
@@ -111,11 +113,15 @@
     </div>
 
   </section>
-
+ 
 
 
 
 
 </body>
+<script src="https://anijs.github.io/lib/anijs/anijs-min.js"></script>
+
+<!-- Include to use $addClass, $toggleClass or $removeClass -->
+<script src="https://anijs.github.io/lib/anijs/helpers/dom/anijs-helper-dom-min.js"></script>
 
 </html>
